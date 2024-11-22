@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Innovativ bremse for rulleski. Øk sikkerheten og oppdag skiglede året rundt med Skibremsen.">
     <title>Skibremsen – Innovativ sikkerhet for rulleski</title>
     <style>
         /* Fargepalett */
@@ -23,10 +24,18 @@
         }
 
         header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
             background-color: var(--secondary-color);
             color: var(--background-color);
             padding: 20px;
-            text-align: center;
+        }
+
+        header img {
+            height: 100px; /* Juster høyden på logoen */
         }
 
         header h1 {
@@ -35,13 +44,40 @@
         }
 
         header p {
-            margin: 5px 0 0;
+            margin: 0;
+            font-size: 1.2rem;
         }
 
         .container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        section p {
+            margin-bottom: 10px;
+        }
+
+        .placeholder {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+            border: 2px dashed var(--secondary-color);
+            border-radius: 10px;
+        }
+
+        .placeholder p {
+            font-size: 1rem;
+            color: var(--text-color);
         }
 
         .cta {
@@ -61,6 +97,13 @@
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            transform: scale(1.05);
         }
 
         footer {
@@ -71,17 +114,15 @@
             margin-top: 20px;
         }
 
-        .placeholder {
-            text-align: center;
-            margin: 40px 0;
-            padding: 20px;
-            border: 2px dashed var(--secondary-color);
-            border-radius: 10px;
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="Skibremsen logo">
         <h1>Skibrems'n UB</h1>
         <p>Trygg og kjapp, brems med en knapp!</p>
     </header>
@@ -115,7 +156,7 @@
     </div>
 
     <footer>
-        <p>© 2024 Skibremsen | Kontakt: <a href="mailto:skibremsn.ub@gmail.com" style="color: orange;">skibremsn.ub@gmail.com</a></p>
+        <p>© 2024 Skibremsen | Kontakt: <a href="mailto:skibremsn.ub@gmail.com">skibremsn.ub@gmail.com</a></p>
     </footer>
 </body>
 </html>
