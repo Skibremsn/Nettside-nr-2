@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Innovativ bremse for rulleski. Øk sikkerheten og oppdag skiglede året rundt med Skibremsen.">
+    <meta name="keywords" content="Skibrems, rulleski, sikkerhet, innovasjon, trening">
     <title>Skibremsen – Innovativ sikkerhet for rulleski</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* Fargepalett */
         :root {
@@ -15,7 +17,7 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: var(--background-color);
@@ -35,7 +37,7 @@
         }
 
         header img {
-            height: 100px; /* Juster høyden på logoen */
+            height: 100px;
         }
 
         header h1 {
@@ -75,9 +77,9 @@
             border-radius: 10px;
         }
 
-        .placeholder p {
-            font-size: 1rem;
-            color: var(--text-color);
+        .placeholder img {
+            max-width: 100%;
+            height: auto;
         }
 
         .cta {
@@ -118,11 +120,43 @@
             color: var(--primary-color);
             text-decoration: none;
         }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .social-media a img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-media a img:hover {
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 600px) {
+            header img {
+                height: 70px;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .cta {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Skibremsen logo">
+        <img src="logo.png" alt="Skibremsen logo - Innovativ bremse for rulleski">
         <h1>Skibrems'n UB</h1>
         <p>Trygg og kjapp, brems med en knapp!</p>
     </header>
@@ -145,7 +179,7 @@
         </section>
 
         <div class="placeholder">
-            <p><strong>Plassholder:</strong> Her kommer produktbilder og nettbutikk i fremtiden.</p>
+            <img src="placeholder.jpg" alt="Produktbilder kommer snart">
         </div>
 
         <div class="cta">
@@ -157,6 +191,11 @@
 
     <footer>
         <p>© 2024 Skibremsen | Kontakt: <a href="mailto:skibremsn.ub@gmail.com">skibremsn.ub@gmail.com</a></p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/skibremsnub?igsh=aGZlaDRsNGc5NTMz" target="_blank">
+                <img src="instagram-logo.png" alt="Instagram-logo for Skibremsen UB">
+            </a>
+        </div>
     </footer>
 </body>
 </html>
